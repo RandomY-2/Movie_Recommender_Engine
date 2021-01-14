@@ -7,6 +7,6 @@ In the 'Content_Based_Recommender' folder I created a content-based recommender 
 
 ## Collaborative Filtering
 
-In the 'Collaborative_Filtering' folder I created a user to user collaborative filtering recommender system using the MovieLens Dataset. The system will calculate the centered cosine similarity between the mvoies and their ratings user enters and the ratings of these movies in the dataset. Then the system will recommend other movies that other users in the dataset that also have a positive rating on the movies the user has a positive ratings. 
+In the 'Collaborative_Filtering' folder I created an item to item collaborative filtering recommender system using the MovieLens Dataset. The system will create a movie to movie dataframe and calculate the Pearson correlation between each movies. Then when the user gives a few ratings, the system will recommend the top 10 movies that are most similar to the movies the user gives a positive rating on. 
 
-To use the collaborative filtering system, the user should first run item_similar.py to create an augmented matrix from the MovieLens dataset and then run the recommender.py
+To use the collaborative filtering system, the user should first run item_similar.py to create the movie to movie dataframe from the MovieLens dataset and then run the recommender.py
